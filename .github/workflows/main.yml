@@ -31,9 +31,6 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v2
 
-      - name: Run the projects setup.
-        run: ./scripts/setup.sh --within-ci true
-
       - name: Compile a release build of lamscript
         run: ./scripts/compile_lamscript.sh \
             --build Release \
